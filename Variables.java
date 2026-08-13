@@ -21,21 +21,39 @@
 
 // inputs in java.
 
-import java.util.*;
+// import java.util.*;
 
-public class Variables {
-    public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
-        // String name = sc.next();
-        // System.out.println(name);
-        String name1 = sc.nextLine();
-        System.out.println(name1);
+// public class Variables {
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+//         // String name = sc.next();
+//         // System.out.println(name);
+//         String name1 = sc.nextLine();
+//         System.out.println(name1);
 
-        sc.close();
-    }
+//         sc.close();
+//     }
 
-}
+// }
 
 // sc.next() - it will take only one word as input.
 // sc.nextLine() - it will take the whole line as input.    
 
+
+// practice questions: take 2 variable a nd b and print thier sum.
+
+import java.util.Scanner;
+
+public class Variables {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int sum = a + b;
+
+        System.out.println(sum);
+        sc.close();
+
+
+    }
+}
