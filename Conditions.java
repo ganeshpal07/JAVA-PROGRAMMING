@@ -47,21 +47,42 @@ public class Conditions {
 
 
             // now using else if ladder.
-            public static void main(String[] args){
-                Scanner sc = new Scanner(System.in);
-                int a = sc.nextInt();
-                int b = sc.nextInt();
+            // public static void main(String[] args){
+            //     Scanner sc = new Scanner(System.in);
+            //     int a = sc.nextInt();
+            //     int b = sc.nextInt();
 
-                if(a == b){
-                    System.out.println("equal");
-                } else if(a > b){
-                    System.out.println(" a is greater");
-                }
-                else {
-                    System.out.println(" a is lesser");
-                }
-                  sc.close();
+            //     if(a == b){
+            //         System.out.println("equal");
+            //     } else if(a > b){
+            //         System.out.println(" a is greater");
+            //     }
+            //     else {
+            //         System.out.println(" a is lesser");
+            //     }
+            //       sc.close();
                 
 
+            // }
+
+
+
+            // switch in java.........
+
+            public static void main(String[] args) {
+                Scanner sc = new Scanner(System.in);
+                int button = sc.nextInt();
+
+                switch(button){
+                    case 1 : System.out.println("hello");
+                    break;
+                    case 2 : System.out.println("namaste");
+                    break;
+                    case 3 : System.out.println("bonjour");
+                    break;
+                    default : System.out.println("invalid");
+
+                    sc.close();
+                }
             }
 }
