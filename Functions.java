@@ -63,16 +63,19 @@ public class Functions {
 
 
     // to print factorial of a number..
+    // factorial => n!= n*(n-1) * (n-2) * (n-3).....*1
+    //  0! = 1
 
     public static void printFactorial(int n) {
         int factorial = 1;
-
+        //  creating a variable whose initial value is 1 because factorial is calculated using multiplication and 0*n = 0
         if(n < 0) {
             System.out.println("invalid number");
             return;
         }
         for(int i=n; i>=1; i--) {
             factorial = factorial*i;
+            // "Purani factorial value ko i se multiply karo aur jo answer aaye, usko dobara factorial mein store karo."
         }
         System.out.println(factorial);
         return;
