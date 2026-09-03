@@ -4,7 +4,7 @@ Syntax:
      [] : can be used before and after the array name
       0 based indexing */
 
-    import java.util.*;
+    // import java.util.*;
       public class Arrays {
     // public static void main(String[] args) {
         // int arr[] = new int[5]; // array of size 5. this is declaration of array.
@@ -61,20 +61,52 @@ Syntax:
 
     // taking size of an array as an input:
 
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int size = sc.nextInt();
-        // ye size variable user se input lega ki array ka size kitna hoga.
+    // public static void main(String[] args) {
+    //     Scanner sc = new Scanner(System.in);
+    //     int size = sc.nextInt();
+    //     // ye size variable user se input lega ki array ka size kitna hoga.
 
-        int marks[] = new int[size];
+    //     int marks[] = new int[size];
 
-        for(int i=0; i<size; i++) {
-            marks[i] = sc.nextInt();
-            // taking input from user and storing it in array.
+    //     for(int i=0; i<size; i++) {
+    //         marks[i] = sc.nextInt();
+    //         // taking input from user and storing it in array.
 
+    //     }
+    //     System.out.println("Physics: " + marks[2]);
+    //     sc.close();
+    // }
+
+
+    // Passing arrays as an arguement.
+    /* 1. pass by values: changes in function are not reflected in main function
+    2. pass by reference: changes in function are reflected in main function
+    ------ arrays are passed by refrenece only. */
+
+    
+    public static void update(int marks[]) {
+        // small function to update the marks array. this function will add 1 to each element of the array.
+        for(int i=0; i<marks.length; i++) {
+            marks[i] = marks[i] + 1;
+            // this will update the marks array by adding 1 to each element of the array.
         }
-        System.out.println("Physics: " + marks[2]);
-        sc.close();
     }
+    public static void main(String[] args) {
+        // main function.
+        int marks[] = {23, 11, 12};
+        update(marks);
+        // function call to update the marks array.
 
+        for(int i=0; i<marks.length; i++) {
+            System.out.println(marks[i]);
+        }
+        // update(marks);
+        // System.out.println("After updating:");
+        // for(int i=0; i<marks.length; i++) {
+        //     System.out.println(marks[i]);
+        // }
+
+        // this is detiled code for expalnation of passing array as an arguement.
+
+    }
 }
