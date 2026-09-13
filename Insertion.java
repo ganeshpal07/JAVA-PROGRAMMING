@@ -1,3 +1,5 @@
+// insertion sort: pick an element from unsorted array and place it at correct position in sorted array.
+
 public class Insertion {
     public static void printArray(int arr[]) {
         for(int i=0; i<arr.length; i++) {

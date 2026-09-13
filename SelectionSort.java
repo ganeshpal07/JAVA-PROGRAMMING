@@ -1,3 +1,5 @@
+// Selection sort: repeatedly find the minimum element from unsorted part and put it at the beginning.
+
 public class SelectionSort {
     public static void printArray(int arr[]) {
         for(int i=0; i<arr.length; i++) {

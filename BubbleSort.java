@@ -1,6 +1,5 @@
 // basic sorting algorithm: bubble sort
-
-
+// large elements come at the end of the array in each iteration, by swapping with adjacent elements.
 
 public class BubbleSort {
     public static void bubbleSort(int arr[]) { 
