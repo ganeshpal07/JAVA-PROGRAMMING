@@ -19,26 +19,32 @@ public class BinarySearch {
         int end = numbers.length - 1;
 
         while(start<=end) {
+            // jabtak start <= end hai tab tak loop chalega.
             int mid = (start+end)/2;
             if(numbers[mid] == key) {
                 return mid;
+                // agar mid == key hai to mid ka index return kar do.
             }
             if(numbers[mid] < key) {
                 start = mid+1;
+                // agar mid < key hai to start ko mid+1 kar do.
             }
             else{
                 end = mid-1;
+                // agar mid > key hai to end ko mid-1 kar do.
             }
             
         }
         return -1;
+        // agar key array me nahi hai to -1 return kar do.
 
     }
 
     public static void main(String[] args) {
-        int numbers[] = {23, 22, 12, 11, 10, 7 };
+        int numbers[] = {7, 10, 11, 12, 22, 23};
         int key = 23;
 
         System.out.println(binarySearch(numbers, key));
+        // calling binarySearch function and printing the index of key in the array.
     }
 }
