@@ -5,7 +5,7 @@ there are two ways of writing string in java.
 2. String str = new String("xyz")
 .. strings are immutable in nature means they cannot be changed after execution. 
 */
-// import java.util.*;
+import java.util.*;
 
 public class StringExample {
     // public static void main(String[] args) {
@@ -19,10 +19,58 @@ public class StringExample {
         
     // }
 
+    // public static void main(String[] args) {
+    //     // String fullName = "Ganesh Pal";
+    //     // System.out.println(fullName.length());
+    //     // used to calculate length of a string.
+
+    //     // string concatenation......
+    //     String firstName = "Ganesh";
+    //     String lastName = "Pal";
+    //     String fullName = firstName + " " + lastName;
+    //     // this adding of string is known as concatenation. 
+    //     System.out.println(fullName);
+
+    //     // charAt(index) method is used to findout any character of a string.
+    // }
+
+    // to print every character of a string.
+
+    // public static void printLetters(String str) {
+    //     for(int i=0; i<str.length(); i++) {
+    //         System.out.print(str.charAt(i) + " ");
+    //     }
+    //     System.out.println();
+    // }
+    // public static void main(String[] args) {
+    //     String firstName = "Ganesh";
+    //     String lastName = "Pal";
+    //     String fullName = firstName + " " + lastName;
+
+    //     printLetters(fullName);
+    // }
+
+    // check if a string is palindrome.
+
     public static void main(String[] args) {
-        String fullName = "Ganesh Pal";
-        System.out.println(fullName.length());
-        // used to calculate length of a string.
+        Scanner sc = new Scanner(System.in);
+        String str;
+        str = sc.next();
+
+        for(int i=0; i<str.length()/2; i++) {
+            // jab tak index half string se chhota h tab takk loop chalega.
+            int n = str.length();
+            if(str.charAt(i) != str.charAt(n-i-1)) {
+                // agar character str index is not equal to its opposite character then not a  palindrome.
+                System.out.println("not a palindrome");
+                // agr humm break use nhi karte aur loop ke inside hi print karte to jab tak charcter mid tak nhi 
+                // reach karta tab tak "not a palindrome" aur "is palindrome" print hota
+                break;
+            } 
+        }
+        System.out.println("is palindrome");
+        sc.close();
+
     }
 
     
