@@ -14,12 +14,23 @@ public class BitManipulation {
         // }
         
         // set in  bit: i) bitmask(i<<1)  ii) operation Or
-        int n = 5;
-        int pos = 1;
-        int bitMask = 1<<pos;
+        // int n = 5;
+        // int pos = 1;
+        // int bitMask = 1<<pos;
 
-        int newNumber = bitMask|n;
+        // int newNumber = bitMask|n;
+        // System.out.println(newNumber);
+
+
+        // Clear Bit: bitmask(i<<1); -------> and with original n.
+        int n =5;
+        int pos = 2;
+        int bitMask = 1<<pos;
+        int notBitMask = ~(bitMask);
+        int newNumber = notBitMask & n;
         System.out.println(newNumber);
+
+
     }
 
     
