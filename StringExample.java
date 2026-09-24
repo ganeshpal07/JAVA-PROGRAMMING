@@ -76,9 +76,9 @@ public class StringExample {
     // comparing strings
 
     public static void main(String[] args){
-        String s1 = "ganesh";
-        String s2 = "ganesh";
-        String s3 = new String("ganesh");
+        // String s1 = "ganesh";
+        // String s2 = "ganesh";
+        // String s3 = new String("ganesh");
 
         // if(s1==s2){
         //     System.out.println("equal"); equal
