@@ -25,3 +25,6 @@ class Calculator{
         return a+b+c;
     }
 }
+
+
+// Run time polymorphism:
