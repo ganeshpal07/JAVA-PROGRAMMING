@@ -7,6 +7,9 @@ public class Interface {
     public static void main(String[] args){
         Queen q = new Queen();
         q.moves();
+        Bear b = new Bear();
+        b.eats();
+       
     }
 }
 interface ChessPlayer{
@@ -21,5 +24,21 @@ class Queen implements ChessPlayer{
 class King implements ChessPlayer{
     public void moves(){
         System.out.println("King can move one square in any direction");
+    }
+}
+
+
+// MULTIPLE INHERITANCE: 
+
+interface Herbivore{
+    void eats();
+}
+interface Carnivore{
+    void eats();
+}
+
+class Bear implements Herbivore, Carnivore{
+    public void eats(){
+        System.out.println("Bear can eat both plants and meat");
     }
 }
