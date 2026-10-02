@@ -1,3 +1,4 @@
+package Objectoriented;
 public class Interface {
     // interface is a blueprint of a class.
     // ex: car(wheel, engine){interface} ----> maruti, honda, toyota{class} -------> car1 car2 car3{object}
