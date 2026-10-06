@@ -1,4 +1,4 @@
-package Objectoriented;
+
 public class Inheritance {
     // when properties and methods from base/parent class transfered or passed to an child/derived class.
     // public static void main(String[] args){
